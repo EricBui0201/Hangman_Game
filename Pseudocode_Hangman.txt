@@ -1,0 +1,50 @@
+1. définition des thèmes et listes de mots correspondantes
+
+2. choix de l'user d'un thème parmi les listes 
+choix de l'ordi parmi ces mots au hasard et affichage de points au niveau de chaque lettre à deviner [.....]
+
+3. user choisit une lettre => input
+
+4a. si la lettre existe, l'ordi affiche :
+	- message : "bravo, cette lettre est le mot"
+	-le mot avec:
+		- la lettre en bonne position
+		- les lettres déjà trouvées avant
+		- des points pour les lettres manquantes
+	-le nombre d'essais restants
+	=> passer à l'étape 3 si le mot n'est pas complet et nb_essais>0
+	=> passer à l'étape 5 si le mot est trouvé ou si nb_essais = 0
+
+4b. si la lettre n'est pas dans le mot, l'ordi affiche :
+	-un message : "cette lettre n'existe pas"
+	-le mot avec :
+		- les lettres déjà trouvées avant 
+		- des points pour les lettres manquantes
+	-le nombre d'essais restants
+	=> passer à l'étape 3 si le mot n'est pas complet et nb_essais>0
+	=> passer à l'étape 5 si le mot est trouvé ou si nb_essais = 0
+
+5a. Si user trouve les lettres, message 'WINNER'
+
+5b. Si le nb d'essai passe à 0, message 'loser'
+
+6. message : "Voulez-vous rejouer?"
+
+
+1 => def listes
+travel = ['Islande', 'Portugal', ....]
+animal = ['lion', 
+
+2. => fonction :
+	input de l'user => theme_user
+	Ex: input = travel
+	import random
+	random.choices(input)
+
+	output = random_word + print(hidden_word) + remaining_chances
+
+3 + 4 => While loop + fonction :
+	input de l'user => letter_user
+	output => message / hidden_word / remaining_chances 
+5 = > if...
+6 => input user voulez-vous rejouer? 
